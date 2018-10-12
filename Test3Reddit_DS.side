@@ -1,0 +1,218 @@
+{
+  "id": "6a1325f6-1647-49be-ac7c-5f0b92c4c7e3",
+  "version": "1.1",
+  "name": "Test3Reddit",
+  "url": "https://www.reddit.com",
+  "tests": [{
+    "id": "9d19bb8a-5808-4622-9cee-438c70cf709c",
+    "name": "Test3SubRed",
+    "commands": [{
+      "id": "92be1e74-e99c-46dd-bd83-005f0bf135fd",
+      "comment": "Open the specified web page",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5bcd67c-a14a-43ac-935d-d83c0054dc9b",
+      "comment": "After clicking the search bar, enter in ethereum in the search bar",
+      "command": "setWindowSize",
+      "target": "1218x727",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66af39eb-8ae0-4e18-baf6-51ed55991880",
+      "comment": "",
+      "command": "click",
+      "target": "id=header-search-bar",
+      "targets": [
+        ["id=header-search-bar", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-bar", "css"],
+        ["css=#header-search-bar", "css:finder"],
+        ["xpath=//input[@id='header-search-bar']", "xpath:attributes"],
+        ["xpath=//div[@id='SearchDropdown']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77ba7188-3ecd-4921-ba29-68ae9f54eeb6",
+      "comment": "Search for ethereum",
+      "command": "type",
+      "target": "id=header-search-bar",
+      "targets": [
+        ["id=header-search-bar", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-bar", "css"],
+        ["css=#header-search-bar", "css:finder"],
+        ["xpath=//input[@id='header-search-bar']", "xpath:attributes"],
+        ["xpath=//div[@id='SearchDropdown']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ethereum"
+    }, {
+      "id": "6ba71b90-ee30-45ff-84a5-2283db7b8e31",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=header-search-bar",
+      "targets": [
+        ["id=header-search-bar", "id"],
+        ["name=q", "name"],
+        ["css=#header-search-bar", "css"],
+        ["css=#header-search-bar", "css:finder"],
+        ["xpath=//input[@id='header-search-bar']", "xpath:attributes"],
+        ["xpath=//div[@id='SearchDropdown']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "61afe9cc-e871-4636-95e6-fd86701cd6c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg.s17r9uf0-2.lddbXR",
+      "targets": [
+        ["css=svg.s17r9uf0-2.lddbXR", "css"],
+        ["css=#search-results-sort > .s17r9uf0-2", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb8a0652-0a34-4f08-a620-2ca375ae98b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) .iDplM",
+      "targets": [
+        ["css=a:nth-child(2) .iDplM", "css:finder"],
+        ["xpath=//a[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "890946f9-e6a4-4aed-972c-f97876b1ad60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pbxmwi-5",
+      "targets": [
+        ["css=.pbxmwi-5", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/header/div/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.reddit.com/login?dest=https%3A%2F%2Fwww.reddit.com%2Fsearch%3Fq%3Dethereum%26sort%3Dtop')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9f5bd07-9f18-4539-b6d4-a43f69f3a615",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=3",
+      "targets": [
+        ["index=3"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3f3bbe6-18a4-4c18-867d-ea678b5e29ea",
+      "comment": "Select to Login into website",
+      "command": "click",
+      "target": "id=loginUsername",
+      "targets": [
+        ["id=loginUsername", "id"],
+        ["name=username", "name"],
+        ["css=#loginUsername", "css"],
+        ["css=#loginUsername", "css:finder"],
+        ["xpath=//input[@id='loginUsername']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "322fae86-7068-4cbd-86b3-69a7b72d7e12",
+      "comment": "Enter in User login",
+      "command": "type",
+      "target": "id=loginUsername",
+      "targets": [
+        ["id=loginUsername", "id"],
+        ["name=username", "name"],
+        ["css=#loginUsername", "css"],
+        ["css=#loginUsername", "css:finder"],
+        ["xpath=//input[@id='loginUsername']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": "<username>s"
+    }, {
+      "id": "dd5d5d2e-fe88-40a8-b578-165326bce5ae",
+      "comment": "Enter in User password",
+      "command": "type",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["name=password", "name"],
+        ["css=#loginPassword", "css"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//fieldset[2]/input", "xpath:position"]
+      ],
+      "value": "<user_password>"
+    }, {
+      "id": "13e3dae1-b0a9-4660-b2dd-b0d759fdec63",
+      "comment": "Select to display the top searches ",
+      "command": "click",
+      "target": "css=button.AnimatedForm__submitButton",
+      "targets": [
+        ["css=button.AnimatedForm__submitButton", "css"],
+        ["css=.AnimatedForm__submitButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4455f496-6143-421d-b8d5-9ae9500c6ba2",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "39ef16c2-f042-41f0-aa18-cc1aa63ed287",
+      "comment": "Uptick the vote",
+      "command": "click",
+      "target": "css=#t3_7mve4y > .\\_23h0-EcaBUorIHC-JZyh6J .ZyxIIl4FP5gHGrJDzNpUC",
+      "targets": [
+        ["css=#t3_7mve4y > .\\_23h0-EcaBUorIHC-JZyh6J .ZyxIIl4FP5gHGrJDzNpUC", "css:finder"],
+        ["xpath=//div[@id='t3_7mve4y']/div/div/button[2]/div/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/button[2]/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4acd72e7-d8ae-4589-9541-9906ad0c3277",
+      "comment": "Down tick the vote",
+      "command": "click",
+      "target": "css=.s1loulka-0 > #vote-button-t3_7mve4y .icon-upvote",
+      "targets": [
+        ["css=.s1loulka-0 > #vote-button-t3_7mve4y .icon-upvote", "css:finder"],
+        ["xpath=//button[@id='vote-button-t3_7mve4y']/div/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/button/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50045694-2529-4b94-92d6-ddb508c308d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.s1loulka-0 > #vote-button-t3_7mve4y .icon-upvote",
+      "targets": [
+        ["css=.s1loulka-0 > #vote-button-t3_7mve4y .icon-upvote", "css:finder"],
+        ["xpath=//button[@id='vote-button-t3_7mve4y']/div/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/button/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fc329ad9-78b3-4608-8a81-b35a2c770367",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9d19bb8a-5808-4622-9cee-438c70cf709c"]
+  }],
+  "urls": ["https://www.reddit.com/"],
+  "plugins": []
+}
